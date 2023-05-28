@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  width: 26vh;
+  margin: -10vh 0 0 -3vh;
+}
+
+h2 {
+  text-align: center;
+  position: relative;
+  left: -1vh;
+  font-size: 7vw;
+}
+
+header {
+  height: 4vh;
+}
+
+.menu-button {
+  display: block;
+  position: fixed;
+  top: 0px;
+  right: 20px;
+  width: 31px;
+  height: 38px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-button span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  margin: 8px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: translateX(0);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 21%;
+  background-color: #f1f1f1;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+  border-radius: 3vw;
+}
+
+.menu a {
+  position: relative;
+  z-index: 1;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
+}
+
+.menu ul li {
+  margin-bottom: 10px;
+}
+
+.menu ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+[id="31"],
+[id="5"],
+[id="49"],
+[id="60"],
+[id="65"],
+[id="68"],
+[id="105"],
+[id="109"],
+[id="132"],
+[id="134"],
+[id="137"],
+[id="139"],
+[id="141"],
+[id="143"],
+[id="265"] {
+  display: none;
+}
+
+[id="274"] img {
+  width: 117vw;
+  width: 89vw;
+  height: 54vw;
+  border-radius: 10px;
+  margin-left: 6vw;
+  margin-top: -5vw;
+}
+
+p {
+  line-height: 6vw;
+  position: absolute;
+  top: 37vh;
+  left: 6vw;
+}
+footer {
+  background-color: #6979f8;
+  gap: 2%;
+  display: flex;
+  font-size: 15px;
+  margin-top: 96vw;
+}
+.footerLogo {
+  width: 25vh;
+  margin: -7.5vh 0 0 -28vh;
+}
+
+span {
+  margin-left: 10vw;
+}
+
+.navbar {
+  display: none;
+  list-style: none;
+  flex-direction: row;
+  white-space: pre-wrap;
+  animation: transitionIn 0.8s;
+  text-decoration: none;
+  position: absolute;
+  left: 29vw;
+  font-size: 2.3vw;
+  top: -2vw;
+}
+.socialLogos {
+  position: relative;
+  top: 18vw;
+  left: -36vw;
+}
+
+@media screen and (min-width: 375px) {
+  p {
+    line-height: 6vw;
+    position: absolute;
+    top: 42vh;
+    left: 6vw;
+  }
+
+  @media screen and (min-width: 425px) {
+    p {
+      line-height: 6vw;
+      position: absolute;
+      top: 45vh;
+      left: 6vw;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    p {
+      line-height: 6vw;
+      position: absolute;
+      top: 79vh;
+      left: 6vw;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    p {
+      line-height: 6vw;
+      position: absolute;
+      top: 81vh;
+      left: 6vw;
+    }
+    .socialLogos {
+      position: relative;
+      top: 7vw;
+      left: -15vw;
+    }
+
+    .navbar {
+      display: flex;
+    }
+
+    .menu-button {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    p {
+      line-height: 6vw;
+      position: absolute;
+      top: 132%;
+      left: 6vw;
+      font-size: 2vw;
+    }
+  }
+}

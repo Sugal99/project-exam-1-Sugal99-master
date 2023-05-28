@@ -1,0 +1,409 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  width: 26vh;
+  margin: -10vh 0 0 -3vh;
+}
+
+h2 {
+  text-align: center;
+  position: relative;
+  left: -1vh;
+  font-size: 7vw;
+}
+
+header {
+  height: 4vh;
+}
+
+[id="265"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+[id="265"] img {
+  width: 41vw;
+  margin: -4vh 3vh 0 0;
+}
+.menu-button {
+  display: block;
+  position: fixed;
+  top: 0px;
+  right: 20px;
+  width: 31px;
+  height: 38px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-button span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  margin: 8px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: translateX(0);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 21%;
+  background-color: #f1f1f1;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+  border-radius: 3vw;
+}
+
+.menu a {
+  position: relative;
+  z-index: 1;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
+}
+
+.menu ul li {
+  margin-bottom: 10px;
+}
+
+.menu ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+[id="31"],
+[id="5"],
+[id="49"],
+[id="60"],
+[id="65"],
+[id="68"],
+[id="105"],
+[id="109"],
+[id="132"],
+[id="134"],
+[id="137"],
+[id="139"],
+[id="141"],
+[id="143"] {
+  display: none;
+}
+
+label {
+  display: block;
+  font-size: 3.5vw;
+  padding-left: 2%;
+  padding-bottom: 1%;
+  margin-top: 1%;
+  font-family: "Gothic-2";
+  animation: transitionIn 0.8s;
+}
+
+input[type="text"] {
+  border-radius: 299px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  height: 6vw;
+  width: 236.86px;
+  animation: transitionIn 0.8s;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 6%;
+  margin-top: 25%;
+  animation: transitionIn 0.8s;
+  position: absolute;
+}
+
+.navbar {
+  display: none;
+  list-style: none;
+  flex-direction: row;
+  white-space: pre-wrap;
+  animation: transitionIn 0.8s;
+  text-decoration: none;
+  position: absolute;
+  left: 29vw;
+  font-size: 2.3vw;
+  top: -2vw;
+}
+
+textarea {
+  width: 236.86px;
+}
+
+.welcome_page_button {
+  font-size: 5.9vw;
+  background-color: #6979f8;
+  border: none;
+  color: white;
+  padding: 4px;
+  margin: 4px 2px;
+  margin-top: -2%;
+  border-radius: 6px;
+  display: flex;
+  margin-left: -36.7vw;
+  animation: transitionIn 0.8s;
+  width: 124.26px;
+  height: 28.7px;
+  padding-left: 9vw;
+}
+
+button {
+  font-size: 5vw;
+  background-color: #6979f8;
+  border: none;
+  color: white;
+  padding: 4px;
+  margin: 4px 2px;
+  margin-top: 0%;
+  border-radius: 6px;
+  display: flex;
+  margin-left: 0.1vw;
+  animation: transitionIn 0.8s;
+  width: 124.26px;
+  height: 28.7px;
+  padding-left: 4vh;
+}
+
+p {
+  position: absolute;
+  top: 81vw;
+  font-weight: 600;
+  font-size: 5vw;
+  margin-left: 8vw;
+}
+
+.error {
+  display: none;
+  color: red;
+  font-size: 10px;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+#name,
+#email,
+#subject,
+#message {
+  width: 236.86px;
+}
+
+footer {
+  background-color: #6979f8;
+  gap: 2%;
+  display: flex;
+  font-size: 15px;
+  margin-top: 150vw;
+}
+.footerLogo {
+  width: 25vh;
+  margin: -7.5vh 0 0 -28vh;
+}
+
+span {
+  margin-left: 9vw;
+}
+.socialLogos {
+  position: relative;
+  top: 18vw;
+  left: -36vw;
+}
+[id="274"] h2 {
+  display: none;
+}
+[id="274"] img {
+  display: none;
+}
+[id="274"] p {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sharingButtons {
+    position: relative;
+    top: 9vw;
+    left: 4vw;
+  }
+
+  .error {
+    display: none;
+    color: red;
+    font-size: 10px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  label {
+    display: block;
+    font-size: 2.5vw;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    font-family: "Gothic-2";
+    animation: transitionIn 0.8s;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 26%;
+    margin-top: 17%;
+    animation: transitionIn 0.8s;
+    position: absolute;
+    margin-left: 30vw;
+  }
+  button {
+    font-size: 1.9vw;
+    background-color: #6979f8;
+    border: none;
+    color: white;
+    padding: 4px;
+    margin: 4px 2px;
+    margin-top: 0%;
+    border-radius: 6px;
+    display: flex;
+    margin-left: 0.1vw;
+    animation: transitionIn 0.8s;
+    width: 124.26px;
+    height: 28.7px;
+    padding-left: 4vh;
+  }
+
+  [id="265"] img {
+    width: 26vw;
+    margin: -5vh 3vh 0 0;
+  }
+
+  p {
+    position: absolute;
+    top: 81vw;
+    font-weight: 600;
+    font-size: 3vw;
+    margin-left: 8vw;
+    margin-top: -20vw;
+  }
+
+  .error {
+    display: none;
+    color: red;
+    font-size: 10px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  .footer {
+    background-color: #6979f8;
+    gap: 2%;
+    display: flex;
+    font-size: 15px;
+    margin-top: 73vw;
+    width: 73vw;
+    padding-left: 35vh;
+  }
+
+  h2 {
+    text-align: center;
+    position: relative;
+    left: -1vh;
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  p {
+    position: absolute;
+    top: 81vw;
+    font-weight: 600;
+    font-size: 2.4vw;
+    margin-left: 8vw;
+    margin-top: -29vw;
+  }
+  .menu-button {
+    display: none;
+  }
+
+  .socialLogos {
+    position: relative;
+    top: 6vw;
+    left: -16vw;
+  }
+  .navbar {
+    display: flex;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 26%;
+    margin-top: 6%;
+    animation: transitionIn 0.8s;
+    position: absolute;
+    margin-left: 37vw;
+  }
+
+  .footer {
+    background-color: #6979f8;
+    gap: 2%;
+    display: flex;
+    font-size: 15px;
+    margin-top: 47vw;
+    width: 73vw;
+    padding-left: 35vh;
+  }
+  label {
+    display: block;
+    font-size: 1.5vw;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    font-family: "Gothic-2";
+    animation: transitionIn 0.8s;
+  }
+
+  button {
+    font-size: 1.1vw;
+    background-color: #6979f8;
+    border: none;
+    color: white;
+    padding: 4px;
+    margin: 4px 2px;
+    margin-top: 0%;
+    border-radius: 6px;
+    display: flex;
+    margin-left: 0.1vw;
+    animation: transitionIn 0.8s;
+    width: 124.26px;
+    height: 28.7px;
+    padding-left: 4vh;
+  }
+}
